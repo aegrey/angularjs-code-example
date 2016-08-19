@@ -16,8 +16,6 @@
 
   function DetailsController($scope, $window) {
 
-    var app = this;
-    console.log('--- Search Loaded ---');
   }
 
 })();
