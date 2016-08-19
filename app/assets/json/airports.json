@@ -1,0 +1,16 @@
+{
+    "0": {
+        "code": "ATL",
+        "name": "Atlanta Hartsfield International Airport",
+        "country": "USA",
+        "city": "Atlanta",
+        "state": "GA"
+    },
+    "1": {
+        "code": "CUN",
+        "name": "Cancun International Airport",
+        "country": "Mexico",
+        "city": "Cancun",
+        "state": "Quintana Roo"
+    }
+}

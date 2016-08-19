@@ -1,0 +1,34 @@
+<form class="container-fluid" ng-submit="processSearch()">
+  <p class="bg-danger center" ng-if="search.error">Please ensure all fields are filled out.</p>
+  <div class="row">
+    <div class="col-md-12 tab-group">
+      <a href="#" class="tab" ng-class="{'on': search.flightType === 'return'}" ng-click="toggleFlightType($event, 'return')">Return</a>
+      <a href="#" class="tab" ng-class="{'on': search.flightType === 'oneway'}" ng-click="toggleFlightType($event, 'oneway')">One Way</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group" ng-class="{'col-sm-6': position === 'landingSearch'}">
+      <label class="sr-only" for="origin">Origin</label>
+      <input type="text" class="form-control" ng-model="search.origin" name="search.origin" placeholder="Origin" uib-typeahead="code for code in codes | filter:$viewValue | limitTo:5" ng-blur="changeBackground()" ng-required="true" required="true">
+    </div>
+    <div class="form-group" ng-class="{'col-sm-6': position === 'landingSearch'}">
+      <label class="sr-only" for="destination">Destination</label>
+      <input type="text" class="form-control" ng-model="search.destination" name="search.destination" placeholder="Destination" uib-typeahead="code for code in codes | filter:$viewValue | limitTo:5" ng-blur="changeBackground()" ng-required="true" required="true">
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group" ng-class="{'col-sm-4': position === 'landingSearch'}">
+        <label for="origin">Departure Date</label>
+        <input type="date" class="form-control" ng-model="search.departDate" ng-required="true" required="true">
+    </div>
+    <div class="form-group" ng-if="search.flightType === 'return'" ng-class="{'col-sm-4': position === 'landingSearch'}">
+        <label for="origin">Return Date</label>
+        <input type="date" class="form-control" ng-model="search.returnDate" ng-required="true" required="true">
+    </div>
+    <div class="form-group" ng-class="{'col-sm-2': position === 'landingSearch'}">
+        <label for="origin">Passengers</label>
+        <input type="number" class="form-control" ng-model="search.passengers" ng-required="true" min="1" max="10" step="1" required="true">
+    </div>
+  </div>
+  <input type="submit" class="btn btn-default btn-lg center" value="Find Flights!">
+</form>

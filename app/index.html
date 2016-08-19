@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="flightSearch">
+  <head>
+    <base href="/">
+    <title>Flight Search</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Flight Search">
+    <meta property="og:title" content="Flight Search">
+    <meta property="og:url" content="https://www.github.com/aegrey/flight-search">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Flight Search">
+
+    <meta name="apple-mobile-web-app-title" content="Flight Search">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="index" title="Flight Search" href="https://www.github.com/aegrey/flight-search">
+
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="/assets/styles/main.css" type="text/css">
+  </head>
+  <body>
+
+    <!-- CONTENT -->
+    <div class="outer-container" ng-controller="MainController as main">
+      <!--
+      ________ DEV NOTE ________
+      Header & Footer: Normally I would create these as seperate view modules to handle navigation/dynamic data, however due to the simplicity of this application, I'm using simplistic views for this.
+      -->
+      <header class="columns">
+        <div class="column">
+          <div class="logo">Migration - Search for Flights</div>
+        </div>
+      </header>
+      <div class="view" ui-view></div>
+      <footer class="columns">
+        <div class="column small-text center">&copy;2016 Ann Eliese Grey - See EULA for license terms</div>
+      </footer>
+    </div>
+    <!-- /CONTENT -->
+
+
+    <!-- SCRIPTS -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <script src="/assets/js/app.js"></script>
+    <!-- /SCRIPTS -->
+
+  </body>
+</html>

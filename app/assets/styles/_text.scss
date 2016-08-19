@@ -1,0 +1,19 @@
+h1 {
+  font-family: $header-font;
+  font-size: 1.6em;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: $header-font;
+  font-size: 1.3em;
+  color: $orange-dark;
+  text-transform: uppercase;
+}
+
+.small-text {
+    color: $grey-light;
+    font-size: 0.8em;
+}

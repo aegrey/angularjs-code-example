@@ -1,0 +1,12 @@
+header {
+  border-bottom: 6px solid $grey-light;
+  padding: 10px 0px 10px 20px;
+
+  .logo {
+    width: 350px;
+    height: 69px;
+    background: transparent url('../images/logo.png') 0px 0px no-repeat;
+    background-size: 100%;
+    text-indent: -99999px;
+  }
+}
