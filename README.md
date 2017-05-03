@@ -1,16 +1,8 @@
-# flight-search
+# AngularJS Coding Example
 
-Destinations available: CUN - Cancun International Airport  
+Partial application built out to show AngularJS code example. Still relevant for prospective employers to review for AngularJS code formatting/style.
   
-Completion percent: 40%  
-  
-Complete Items:  
- -  Header/Footer/Landing layout
- -  Search Form Directive
-  
-In Progress:
- -  Search Results JSON
- -  Search Results Logic
+
   
 To Do:  
  -  Search Results Layout
@@ -31,7 +23,7 @@ Comments throughout specify areas of the application I did not build out in the 
 ---  
 
 #### IMPORTANT NOTICE
-This is a code exercise completed by Ann Eliese Grey. All code, images, and any other content are copyright Ann Eliese Grey*.Use of any portion of this content for any purpose other than code review is in violation of the EULA. Use of this content in an application intended to be for profit, personal, or other means will be prosecuted to the fullest extent of the law.  
+This is a code exercise completed by Ann Eliese Grey. All code, images, and any other content are copyright Ann Eliese Grey*. Use of any portion of this content for any purpose other than code review is in violation of the EULA. Use of this content in an application intended to be for profit, personal, or other means will be prosecuted to the fullest extent of the law.  
   
 *This does not include open-source libraries used, or the exercise instructional PDF provided by ThoughtWorks.
 
